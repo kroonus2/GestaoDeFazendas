@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "365477371752",
+    "project_id": "prova02-rafaelcaroni",
+    "storage_bucket": "prova02-rafaelcaroni.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365477371752:android:a859dcb949c9d2db8580dd",
+        "android_client_info": {
+          "package_name": "com.example.prova02_rafaelcaroni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365477371752-8okehac3a1leqpdtuh32mqi7nva3lknq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9u_Fh0C2TQ8RaEttgESUmQ-oCELITdy4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365477371752-8okehac3a1leqpdtuh32mqi7nva3lknq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
