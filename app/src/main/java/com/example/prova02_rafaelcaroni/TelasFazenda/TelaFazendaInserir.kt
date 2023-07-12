@@ -155,7 +155,7 @@ private fun InserirFazenda(fazenda: Fazenda? = null) {
             Spacer(modifier = Modifier.height(40.dp))
             Card(
                 onClick = {
-                    val fazenda = Fazenda(
+                    val fazendaNova = Fazenda(
                         fieldCodigo.value.text,
                         fieldNome.value.text,
                         fieldValorDaPropriedade.value.text.toDouble(),
@@ -164,7 +164,7 @@ private fun InserirFazenda(fazenda: Fazenda? = null) {
                     //Caso já exista fazenda, atualize-a
                     if (fazenda != null) {
                         // Atualizar fazenda existente
-                        fazendaController.atualizarFazenda(fazenda, contexto) { sucesso ->
+                        fazendaController.atualizarFazenda(fazendaNova, contexto) { sucesso ->
                             if (sucesso) {
                                 Intent().apply {
                                     activity?.setResult(Activity.RESULT_OK, this)
@@ -177,7 +177,7 @@ private fun InserirFazenda(fazenda: Fazenda? = null) {
                         //caso não exista fazenda, insira-a
                     } else {
                         // Inserir nova fazenda
-                        fazendaController.inserirFazenda(fazenda, contexto) { sucesso ->
+                        fazendaController.inserirFazenda(fazendaNova, contexto) { sucesso ->
                             if (sucesso) {
                                 fieldCodigo.value = TextFieldValue("")
                                 fieldNome.value = TextFieldValue("")
